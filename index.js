@@ -1,17 +1,18 @@
-import { OpenAI } from 'openai';
+import Anthropic from '@anthropic-ai/sdk';
 
-const openai = new OpenAI({
+const anthropic = new Anthropic({
   apiKey: 'sk-d5Fw6wuQWm8KIwgP1MfC1NdNMUCARjckJR9D1J600i8',
   baseURL: 'https://valuation-asked-staffing-habits.trycloudflare.com/v1',
 });
 
 async function main() {
-  const completion = await openai.chat.completions.create({
-    messages: [{ role: 'user', content: 'Hello!' }],
+  const message = await anthropic.messages.create({
     model: 'claude-3-5-sonnet-20240620',
+    max_tokens: 1024,
+    messages: [{ role: 'user', content: 'Hello!' }],
   });
 
-  console.log(completion.choices[0].message.content);
+  console.log(message.content[0].text);
 }
 
 main();
