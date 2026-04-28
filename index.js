@@ -2,7 +2,7 @@ import Anthropic from '@anthropic-ai/sdk';
 
 const anthropic = new Anthropic({
   apiKey: 'sk-ant-HpKRhWq3iAZu6eLSNlz3wvgBcVZZf3KYfE3L4C4UTQA',
-  baseURL: process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
+  baseURL: 'https://treasury-adsl-entitled-bathroom.trycloudflare.com/v1',
 });
 
 
