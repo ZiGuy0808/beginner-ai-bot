@@ -1,11 +1,12 @@
 import Anthropic from '@anthropic-ai/sdk';
 
-const ANTHROPIC_API_KEY = 'sk-ant-HpKRhWq3iAZu6eLSNlz3wvgBcVZZf3KYfE3L4C4UTQA';
+// Replace YOUR_KEY_HERE with your Anthropic API key
+const ANTHROPIC_API_KEY = 'YOUR_KEY_HERE';
 
 const anthropic = new Anthropic({
   apiKey: ANTHROPIC_API_KEY,
-  baseURL: 'https://valuation-asked-staffing-habits.trycloudflare.com/v1',
 });
+
 
 async function main() {
   const message = await anthropic.messages.create({

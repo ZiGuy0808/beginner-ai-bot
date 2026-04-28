@@ -2,9 +2,9 @@
 
 A simple bot to get started with LLMs.
 
-Set your Anthropic key before running:
+### Usage
 
-```bash
-export ANTHROPIC_API_KEY="your-key-here"
-node index.js
-```
+1. Clone this repo: `git clone https://github.com/ZiGuy0808/beginner-ai-bot`
+2. Install dependencies: `npm install`
+3. Edit `index.js` to set your `ANTHROPIC_API_KEY`, or use an environment variable.
+4. Run: `node index.js`
