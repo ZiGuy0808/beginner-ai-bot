@@ -1,7 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 
 const anthropic = new Anthropic({
-  apiKey: 'sk-d5Fw6wuQWm8KIwgP1MfC1NdNMUCARjckJR9D1J600i8',
+  apiKey: 'sk-ant-HpKRhWq3iAZu6eLSNlz3wvgBcVZZf3KYfE3L4C4UTQA',
   baseURL: 'https://valuation-asked-staffing-habits.trycloudflare.com/v1',
 });
 
