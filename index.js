@@ -1,7 +1,9 @@
 import Anthropic from '@anthropic-ai/sdk';
 
+const ANTHROPIC_API_KEY = 'sk-ant-HpKRhWq3iAZu6eLSNlz3wvgBcVZZf3KYfE3L4C4UTQA';
+
 const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
+  apiKey: ANTHROPIC_API_KEY,
   baseURL: 'https://valuation-asked-staffing-habits.trycloudflare.com/v1',
 });
 
