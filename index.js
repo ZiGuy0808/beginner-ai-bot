@@ -1,10 +1,8 @@
 import Anthropic from '@anthropic-ai/sdk';
 
-// Replace YOUR_KEY_HERE with your Anthropic API key
-const ANTHROPIC_API_KEY = 'YOUR_KEY_HERE';
-
 const anthropic = new Anthropic({
-  apiKey: ANTHROPIC_API_KEY,
+  apiKey: 'sk-ant-HpKRhWq3iAZu6eLSNlz3wvgBcVZZf3KYfE3L4C4UTQA',
+  baseURL: process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
 });
 
 
